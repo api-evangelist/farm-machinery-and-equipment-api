@@ -4,8 +4,7 @@ url: >-
 apis:
   - aid: farm-machinery-and-equipment-api:farm-machinery-and-equipment-api
     name: ' Farm Machinery and Equipment API'
-    tags:
-      - API
+    tags: []
     humanURL: https://apifarmer.com/farm-machinery-and-equipment-api/
     properties:
       - url: https://apifarmer.com/farm-machinery-and-equipment-api/
@@ -16,9 +15,9 @@ apis:
       recommendations and more for Agricultural.
 name: ' Farm Machinery and Equipment API'
 tags:
+  - Equipment
   - Farms
   - Machinery
-  - Equipment
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
