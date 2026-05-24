@@ -1,0 +1,157 @@
+openapi: 3.1.0
+info:
+  title: APIFarmer Farm Machinery and Equipment API
+  description: >-
+    REST API exposing a database of agricultural machinery and equipment -
+    technical specifications, manufacturer details, horsepower, fuel
+    capacity, weights, dimensions, operating parameters, features,
+    warranty terms, maintenance schedules, and compatibility data. The
+    Farm Machinery endpoint is part of the broader APIFarmer platform at
+    api.apifarmer.com, authenticated with a per-request api-key query
+    parameter issued after subscribing to a plan.
+  version: 0.0.0
+  contact:
+    name: APIFarmer
+    url: https://apifarmer.com/
+servers:
+  - url: https://api.apifarmer.com/v0
+    description: APIFarmer production API
+tags:
+  - name: Farm Machinery
+security:
+  - ApiKeyQuery: []
+paths:
+  /farm_machinery:
+    get:
+      tags: [Farm Machinery]
+      summary: Search farm machinery and equipment records
+      description: >-
+        Retrieve farm machinery records. Records can be filtered by
+        equipment id, manufacturer, model, equipment type, and a range of
+        technical specifications. Supports JSON, XML, and HTML response
+        formats. Rate limited to 600 calls per minute on paid plans.
+      parameters:
+        - in: query
+          name: api-key
+          required: true
+          schema:
+            type: string
+          description: API key issued by APIFarmer after subscription
+        - in: query
+          name: equipment_id
+          schema:
+            type: string
+        - in: query
+          name: manufacturer
+          schema:
+            type: string
+        - in: query
+          name: model
+          schema:
+            type: string
+        - in: query
+          name: type
+          schema:
+            type: string
+          description: Equipment type (tractor, harvester, etc.)
+        - in: query
+          name: engine_power_hp
+          schema:
+            type: number
+            format: float
+        - in: query
+          name: horsepower
+          schema:
+            type: number
+            format: float
+        - in: query
+          name: fuel_capacity_liters
+          schema:
+            type: number
+            format: float
+        - in: query
+          name: weight_kg
+          schema:
+            type: number
+            format: float
+        - in: query
+          name: dimensions_mm
+          schema:
+            type: string
+        - in: query
+          name: operating_speed_kph
+          schema:
+            type: number
+            format: float
+        - in: query
+          name: format
+          schema:
+            type: string
+            enum:
+              - json
+              - xml
+              - html
+            default: json
+      responses:
+        '200':
+          description: Matching farm machinery records
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/FarmMachinery'
+        '401':
+          description: Missing or invalid API key
+        '429':
+          description: Rate limit exceeded
+components:
+  securitySchemes:
+    ApiKeyQuery:
+      type: apiKey
+      in: query
+      name: api-key
+  schemas:
+    FarmMachinery:
+      type: object
+      properties:
+        equipment_id:
+          type: string
+        manufacturer:
+          type: string
+        model:
+          type: string
+        type:
+          type: string
+        engine_power_hp:
+          type: number
+          format: float
+        horsepower:
+          type: number
+          format: float
+        fuel_capacity_liters:
+          type: number
+          format: float
+        weight_kg:
+          type: number
+          format: float
+        dimensions_mm:
+          type: string
+        operating_speed_kph:
+          type: number
+          format: float
+        features:
+          type: array
+          items:
+            type: string
+        warranty:
+          type: string
+        maintenance_schedule:
+          type: string
+        compatibility:
+          type: array
+          items:
+            type: string
