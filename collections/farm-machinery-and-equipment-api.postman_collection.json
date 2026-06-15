@@ -1,0 +1,399 @@
+{
+  "item": [
+    {
+      "id": "b2c26aac-08ee-458c-9247-4ba5b1c3271a",
+      "name": "Farm Machinery",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "f9deae01-40f3-4ed0-b26f-43ab50c78d62",
+          "name": "Search farm machinery and equipment records",
+          "request": {
+            "name": "Search farm machinery and equipment records",
+            "description": {
+              "content": "Retrieve farm machinery records. Records can be filtered by equipment id, manufacturer, model, equipment type, and a range of technical specifications. Supports JSON, XML, and HTML response formats. Rate limited to 600 calls per minute on paid plans.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "farm_machinery"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "api-key",
+                  "value": "<string>",
+                  "description": "(Required) API key issued by APIFarmer after subscription"
+                },
+                {
+                  "disabled": false,
+                  "key": "equipment_id",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "manufacturer",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "model",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "type",
+                  "value": "<string>",
+                  "description": "Equipment type (tractor, harvester, etc.)"
+                },
+                {
+                  "disabled": false,
+                  "key": "engine_power_hp",
+                  "value": "<float>"
+                },
+                {
+                  "disabled": false,
+                  "key": "horsepower",
+                  "value": "<float>"
+                },
+                {
+                  "disabled": false,
+                  "key": "fuel_capacity_liters",
+                  "value": "<float>"
+                },
+                {
+                  "disabled": false,
+                  "key": "weight_kg",
+                  "value": "<float>"
+                },
+                {
+                  "disabled": false,
+                  "key": "dimensions_mm",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "operating_speed_kph",
+                  "value": "<float>"
+                },
+                {
+                  "disabled": false,
+                  "key": "format",
+                  "value": "json"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "35796c57-d7b0-4add-9191-1a87c4a33aa9",
+              "name": "Matching farm machinery records",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "farm_machinery"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "api-key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "equipment_id",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "manufacturer",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "model",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "type",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "engine_power_hp",
+                      "value": "<float>"
+                    },
+                    {
+                      "key": "horsepower",
+                      "value": "<float>"
+                    },
+                    {
+                      "key": "fuel_capacity_liters",
+                      "value": "<float>"
+                    },
+                    {
+                      "key": "weight_kg",
+                      "value": "<float>"
+                    },
+                    {
+                      "key": "dimensions_mm",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "operating_speed_kph",
+                      "value": "<float>"
+                    },
+                    {
+                      "key": "format",
+                      "value": "json"
+                    },
+                    {
+                      "key": "api-key",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": [\n    {\n      \"equipment_id\": \"string\",\n      \"manufacturer\": \"string\",\n      \"model\": \"string\",\n      \"type\": \"string\",\n      \"engine_power_hp\": 7421.378178368151,\n      \"horsepower\": 2419.233652314101,\n      \"fuel_capacity_liters\": 5205.683804653407,\n      \"weight_kg\": 74.75943961268605,\n      \"dimensions_mm\": \"string\",\n      \"operating_speed_kph\": 4113.409514823857,\n      \"features\": [\n        \"string\",\n        \"string\"\n      ],\n      \"warranty\": \"string\",\n      \"maintenance_schedule\": \"string\",\n      \"compatibility\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"equipment_id\": \"string\",\n      \"manufacturer\": \"string\",\n      \"model\": \"string\",\n      \"type\": \"string\",\n      \"engine_power_hp\": 8539.401533851536,\n      \"horsepower\": 5557.545723333182,\n      \"fuel_capacity_liters\": 902.4018554861168,\n      \"weight_kg\": 7536.988325389572,\n      \"dimensions_mm\": \"string\",\n      \"operating_speed_kph\": 1803.360435291357,\n      \"features\": [\n        \"string\",\n        \"string\"\n      ],\n      \"warranty\": \"string\",\n      \"maintenance_schedule\": \"string\",\n      \"compatibility\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "fb6a7d4c-e42b-4a20-83e5-dd426a44e3ac",
+              "name": "Missing or invalid API key",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "farm_machinery"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "api-key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "equipment_id",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "manufacturer",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "model",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "type",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "engine_power_hp",
+                      "value": "<float>"
+                    },
+                    {
+                      "key": "horsepower",
+                      "value": "<float>"
+                    },
+                    {
+                      "key": "fuel_capacity_liters",
+                      "value": "<float>"
+                    },
+                    {
+                      "key": "weight_kg",
+                      "value": "<float>"
+                    },
+                    {
+                      "key": "dimensions_mm",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "operating_speed_kph",
+                      "value": "<float>"
+                    },
+                    {
+                      "key": "format",
+                      "value": "json"
+                    },
+                    {
+                      "key": "api-key",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "7d87977c-8fd4-46c5-9e2e-dc2d09dd49ff",
+              "name": "Rate limit exceeded",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "farm_machinery"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "api-key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "equipment_id",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "manufacturer",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "model",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "type",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "engine_power_hp",
+                      "value": "<float>"
+                    },
+                    {
+                      "key": "horsepower",
+                      "value": "<float>"
+                    },
+                    {
+                      "key": "fuel_capacity_liters",
+                      "value": "<float>"
+                    },
+                    {
+                      "key": "weight_kg",
+                      "value": "<float>"
+                    },
+                    {
+                      "key": "dimensions_mm",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "operating_speed_kph",
+                      "value": "<float>"
+                    },
+                    {
+                      "key": "format",
+                      "value": "json"
+                    },
+                    {
+                      "key": "api-key",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.apifarmer.com/v0",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "api-key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "63584a39-b68b-4933-8b9c-20890e17d406",
+    "name": "APIFarmer Farm Machinery and Equipment API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "REST API exposing a database of agricultural machinery and equipment - technical specifications, manufacturer details, horsepower, fuel capacity, weights, dimensions, operating parameters, features, warranty terms, maintenance schedules, and compatibility data. The Farm Machinery endpoint is part of the broader APIFarmer platform at api.apifarmer.com, authenticated with a per-request api-key query parameter issued after subscribing to a plan.\n\nContact Support:\n Name: APIFarmer",
+      "type": "text/plain"
+    }
+  }
+}

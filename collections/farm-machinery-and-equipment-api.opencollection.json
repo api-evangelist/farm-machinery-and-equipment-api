@@ -1,0 +1,101 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "APIFarmer Farm Machinery and Equipment API",
+    "version": "0.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "api-key",
+      "value": "{{api-key}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Farm Machinery",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search farm machinery and equipment records",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.apifarmer.com/v0/farm_machinery",
+            "params": [
+              {
+                "name": "api-key",
+                "value": "",
+                "type": "query",
+                "description": "API key issued by APIFarmer after subscription"
+              },
+              {
+                "name": "equipment_id",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "manufacturer",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "model",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "type",
+                "value": "",
+                "type": "query",
+                "description": "Equipment type (tractor, harvester, etc.)"
+              },
+              {
+                "name": "engine_power_hp",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "horsepower",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "fuel_capacity_liters",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "weight_kg",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "dimensions_mm",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "operating_speed_kph",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "format",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Retrieve farm machinery records. Records can be filtered by equipment id, manufacturer, model, equipment type, and a range of technical specifications. Supports JSON, XML, and HTML response formats. Rate limited to 600 calls per minute on paid plans."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
