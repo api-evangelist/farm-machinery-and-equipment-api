@@ -1,0 +1,15 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/farm-machinery-and-equipment-api-openapi.yml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - query
+schemes:
+- name: ApiKeyQuery
+  type: apiKey
+  in: query
+  parameter: api-key
+  sources:
+  - openapi/farm-machinery-and-equipment-api-openapi.yml
