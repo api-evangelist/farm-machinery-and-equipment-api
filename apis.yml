@@ -44,6 +44,8 @@ maintainers:
     email: kin@apievangelist.com
 specificationVersion: '0.19'
 common:
+- type: AgenticAccess
+  url: agentic-access/farm-machinery-and-equipment-api-agentic-access.yml
 - type: DomainSecurity
   url: security/farm-machinery-and-equipment-api-domain-security.yml
 - type: Authentication
