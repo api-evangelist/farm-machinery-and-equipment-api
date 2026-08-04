@@ -1,0 +1,14 @@
+{
+  "provider": "farm-machinery-and-equipment-api",
+  "sources": [
+    "farm-machinery-and-equipment-api-farm-machinery-api-openapi.yml"
+  ],
+  "outputs": [
+    "farm-machinery-and-equipment-api-farm-machinery-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
