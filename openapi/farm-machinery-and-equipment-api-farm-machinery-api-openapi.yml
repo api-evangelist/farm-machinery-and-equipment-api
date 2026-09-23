@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
   title: APIFarmer and Equipment Farm Machinery API
   description: REST API exposing a database of agricultural machinery and equipment - technical specifications, manufacturer details, horsepower, fuel capacity, weights, dimensions, operating parameters, features, warranty terms, maintenance schedules, and compatibility data. The Farm Machinery endpoint is part of the broader APIFarmer platform at api.apifarmer.com, authenticated with a per-request api-key query parameter issued after subscribing to a plan.
@@ -98,6 +98,8 @@ paths:
           description: Missing or invalid API key
         '429':
           description: Rate limit exceeded
+      operationId: getFarmMachinery
+      x-operation-id-source: derived
 components:
   schemas:
     FarmMachinery:
