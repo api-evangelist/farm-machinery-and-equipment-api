@@ -1,4 +1,4 @@
-# Farm Machinery and Equipment API (farm-machinery-and-equipment-api)
+# Farm Machinery and Equipment API
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,49 +66,73 @@
 
 The Farm Machinery and Equipment API is a software solution that provides developers with access to a database of information related to various types of farm machinery and equipment. This API allows users to retrieve detailed specifications, usage instructions, maintenance tips, and other relevant data for a wide range of agricultural tools and devices.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/farm-machinery-and-equipment-api/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/farm-machinery-and-equipment-api/refs/heads/main/apis.yml)
+**Areas:** Equipment · Farms · Machinery
 
-## Scope
+## Farm Machinery and Equipment API on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Farm Machinery and Equipment API is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/farm-machinery-and-equipment-api/](https://apis.io/providers/farm-machinery-and-equipment-api/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (2)
 
-- Equipment
-- Farms
-- Machinery
+- [Farm Machinery and Equipment API](https://apis.io/apis/farm-machinery-and-equipment-api/farm-machinery-and-equipment-api/) — Farm Machinery and Equipment API is a vast repository of farm machinery data, technical details, specifications, usage guidelines, operating manuals,…
+- [Farm Machinery and Equipment API Farm Machinery API](https://apis.io/apis/farm-machinery-and-equipment-api/farm-machinery-and-equipment-api-farm-machinery-api/) — The Farm Machinery API from Farm Machinery and Equipment API — 1 operation(s) for farm machinery.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2025-02-12
-- **Modified:** 2026-04-28
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Farm Machinery and Equipment API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-Farm Machinery and Equipment API is a vast repository of farm machinery data, technical details, specifications, usage guidelines, operating manuals, maintenance recommendations and more for Agriculture. Supports JSON, XML and HTML response formats with API key authentication.
+- [Farm Machinery And Equipment Api Agentic Access](https://apis.io/agentic-access/farm-machinery-and-equipment-api/farm-machinery-and-equipment-api-agentic-access/)
 
-- **Human URL:** [https://apifarmer.com/farm-machinery-and-equipment-api/](https://apifarmer.com/farm-machinery-and-equipment-api/)
-- **Base URL:** `https://apifarmer.com/`
+#### Collections (2)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Agriculture
-- Equipment
-- Machinery
+- [APIFarmer Farm Machinery and Equipment API](https://apis.io/collections/farm-machinery-and-equipment-api/open-farm-machinery-and-equipment-api/)
+- [APIFarmer and Equipment Farm Machinery API](https://apis.io/collections/farm-machinery-and-equipment-api/open-farm-machinery-and-equipment-api-farm-machinery-api/)
 
-#### Properties
+#### Security (2)
 
-- [Documentation](https://apifarmer.com/farm-machinery-and-equipment-api/)
-- [Documentation](https://apifarmer.com/documentation-api/)
-- [Pricing](https://apifarmer.com/farm-machinery-and-equipment-api/#pricing)
-- [Postman Collection](collections/farm-machinery-and-equipment-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/farm-machinery-and-equipment-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Maintainers
+- [Farm Machinery And Equipment Api Authentication](https://apis.io/security/farm-machinery-and-equipment-api/farm-machinery-and-equipment-api-authentication/)
+- [Farm Machinery And Equipment Api Domain Security](https://apis.io/security/farm-machinery-and-equipment-api/farm-machinery-and-equipment-api-domain-security/)
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Farm Machinery And Equipment Api Plans Pricing](https://apis.io/plans/farm-machinery-and-equipment-api/farm-machinery-and-equipment-api-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Farm Machinery And Equipment Api Rate Limits](https://apis.io/rate-limits/farm-machinery-and-equipment-api/farm-machinery-and-equipment-api-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Farm Machinery And Equipment Api Finops](https://apis.io/finops/farm-machinery-and-equipment-api/farm-machinery-and-equipment-api-finops/)
+
+## API Evangelist rating
+
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
+
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Farm Machinery and Equipment API: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/farm-machinery-and-equipment-api/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
